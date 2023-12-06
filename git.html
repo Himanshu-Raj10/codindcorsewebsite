@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSE326 PROJECT</title>
+    <link rel="stylesheet" href="cse.css">
+</head>
+
+<style>*{
+  margin: 0;
+  padding: 0;
+  background:grey; 
+ 
+}
+
+
+
+.menu1{
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  
+}
+
+.navbar{
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo{
+  color: #7E22CE;
+  font-size: 35px;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  margin-top: 5px
+}
+
+.menu2{
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+
+
+
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+  color: #7E22CE;
+}
+
+.search{
+  width: 330px;
+  float: left;
+  margin-left: 270px;
+}
+
+.srch{
+  font-family: 'Times New Roman';
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #7E22CE;
+  margin-top: 13px;
+  color: #fff;
+  border-right: none;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.find{
+  width: 100px;
+  height: 40px;
+  background: #7E22CE;
+  border: 2px solid #7E22CE;
+  margin-top: 13px;
+  color: white;
+  font-size: 15px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.find:hover{
+  color: blue;
+}
+
+.find:focus{
+  outline: none;
+}
+
+.srch:focus{
+  outline: none;
+}
+
+.content{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #fff;
+  position: relative;
+}
+
+.content .notice{
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+
+.content h1{
+  font-family: 'Times New Roman';
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+}
+
+.content .join{
+  width: 160px;
+  height: 40px;
+  background-color: #7E22CE;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+  
+}
+
+.content .join a{
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: .3s ease;
+  background-color:#7E22CE ;
+  
+}
+
+.join:hover{
+  background-color: blue;
+ 
+}
+
+.join:hover a{
+  background-color: blue;
+ 
+}
+
+.content span{
+ color: #7E22CE;
+  font-size: 65px
+}
+
+.form{
+  width: 250px;
+  height: 380px;
+  background-color: black;
+  position: absolute;
+  top: -20px;
+  left: 870px;
+  transform: translate(0%,-5%);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.form h2{
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #7E22CE;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input{
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #7E22CE;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+
+.form input:focus{
+  outline: none;
+}
+
+::placeholder{
+  color: #fff;
+  font-family: Arial;
+}
+
+.login{
+  width: 240px;
+  height: 40px;
+  background: #7E22CE;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.login:hover{
+  background: blue;
+  color: #7E22CE;
+}
+
+
+.login:hover a{
+  background: blue;
+}
+.login a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #7E22CE;
+  transition: .3s ease;
+}
+.form .link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: black;
+}
+.form .link a{
+  text-decoration: none;
+  color: #7E22CE;
+}
+.liw{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: black;
+}
+.icons a{
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+}
+.icons ion-icon{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+  background-color: black;
+}
+.icons ion-icon:hover{
+  color: #7E22CE;
+}
+
+.sign{
+
+  background: #7E22CE;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.sign:hover{
+  background: blue;
+  color: #7E22CE;
+}
+
+
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: #e6e6e6;
+  padding: 3.75rem 0;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form::before, .three-column-footer-contact-form-container .three-column-footer-contact-form::after {
+  display: table;
+  content: ' ';
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form::after {
+  clear: both;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form a {
+  color: #e6e6e6;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left {
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  display: table;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left .baseline {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left .contact-details p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left .input-group {
+  padding: 2rem 0 0 0;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left .input-group input {
+  border-bottom: 2px solid #cacaca;
+}
+
+@media print, screen and (min-width: 40em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left:last-child:not(:first-child) {
+  float: right;
+}
+
+@media print, screen and (min-width: 64em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left {
+    width: 25%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) and (min-width: 40em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-left:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center {
+  text-align: left;
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  display: table;
+}
+
+@media print, screen and (min-width: 40em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center:last-child:not(:first-child) {
+  float: right;
+}
+
+@media print, screen and (min-width: 64em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center {
+    width: 33.33333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    position: relative;
+    left: 8.33333%;
+  }
+}
+
+@media print, screen and (min-width: 64em) and (min-width: 40em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center .baseline {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center .input-group {
+  padding: 0.5rem 0 0 0;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center .input-group input {
+  border-bottom: 2px solid #cacaca;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-center .input-group textarea {
+  border-bottom: 2px solid #cacaca;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right {
+  text-align: right;
+  width: 100%;
+  float: left;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  display: table;
+}
+
+
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right h2 {
+  color: #fefefe;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right .fa {
+  padding: 1rem 0 1rem 0.2rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+.three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right:last-child:not(:first-child) {
+  float: right;
+}
+
+@media print, screen and (min-width: 64em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right {
+    width: 25%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) and (min-width: 40em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .three-column-footer-contact-form-container .three-column-footer-contact-form .footer-right:last-child:not(:first-child) {
+    float: right;
+  }
+}
+
+</style>
+
+
+<body>
+    
+    <div class="menu1">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Learn Coding</h2>
+            </div>
+
+            <div class="menu2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">Java</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="type any Course">
+                <a href="#"> <button class="find">find</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>HTML <br><span>CSS</span> <br>Web Design Course</h1>
+            <p class="notice">Responsive web design is about creating web pages that look good on all devices!<br> A responsive web design will automatically adjust for different screen sizes and viewports</b>
+                <br>aptive web design is a type of web design whereby the browser loads.</b>
+            </p>
+
+
+                <button class="join"><a href="#">Join Now</a></button>
+            
+
+                <div class="form">
+                    <p class="link">Create new account<br>
+                    <h2 class="sign">Sign up</h2>
+                    <input type="email" name="email" placeholder="Username/Email">
+                    <input type="password" name="" placeholder="Password">
+                    <button class="login"><a href="#">Login</a></button>
+                        
+
+
+                    
+                    </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="content">
+                    <h1>Python<span>&nbsp;Course</span></h1>
+                    <p class="notice">Python is a computer programming language often used to <br> build websites and software,</b>
+                        <br> automate tasks, and conduct data analysis.</b>
+                    </p>
+        
+                        <button class="join"><a href="#">Join Now</a></button>
+                        </div>
+                        <div class="content">
+                            <h1>C Programing<span>&nbsp;Course</span></h1>
+                            <p class="notice">C programming language is a machine-independent programming language that is mainly used to</b>
+                                <br>create many types of applications and operating systems such as <br>Windows, and other complicated programs such as the Oracle database, Git, Python interpreter, and games</b>
+                            </p>
+                
+                                <button class="join"><a href="#">Join Now</a></button>
+                                </div>
+                               
+                                                        <div class="content">
+                                                            <h1>C++<span>&nbsp;Course</span></h1>
+                                                            <p class="notice"> C++ (or “C-plus-plus”) is a general-purpose programming and coding language.<br> C++ is used in developing browsers, operating systems, and applications,</b>
+                                                                <br>as well as in-game programming, software engineering, data structures, etc.</b>
+                                                            </p>
+                                                
+                                                                <button class="join"><a href="#">Join Now</a></button>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <h1>Java<span>&nbsp;Course</span></h1>
+                                                                    <p class="notice">Java is a widely-used programming language for coding web applications. <br>It has been a popular choice among developers for over two decades, with millions of Java applications in use today.</b>
+                                                                        <br>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.</b>
+                                                                    </p>
+                                                        
+                                                                        <button class="join"><a href="#">Join Now</a></button>
+                                                                        </div>
+                                                                        <div class="three-column-footer-contact-form-container">
+                                                                            <footer class="three-column-footer-contact-form" data-equalizer data-equalize-by-row="true">
+                                                                              <div class="footer-left" data-equalizer-watch>
+                                                                                <div class="baseline">
+                                                                                  <div class="contact-details">
+                                                                                    <h3>Contact details</h3>
+                                                                                    <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 01234 567890</p>
+                                                                                    <p><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> <h3>Contact us</h3></a></p>
+                                                                                    <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Phagwara, Panjab, India</p>
+                                                                                  </div>
+                                                                                  <div class="newsletter">
+                                                                                    <div class="input-group">
+                                                                                      <h4>Sign up for our newsletter</h4>
+                                                                                      <input class="input-group-field" type="email" placeholder="Email address">
+                                                                                    </div>
+                                                                                    <a class="button expanded" href="#">Submit</a>
+                                                                                  </div>
+                                                                                </div>
+                                                                               </div>
+                                                                              <div class="footer-center" data-equalizer-watch>
+                                                                                <div class="baseline">
+                                                                                  <div class="newsletter">
+                                                                                    <h2>Contact form</h2>
+                                                                                    <div class="input-group">
+                                                                                      <input class="input-group-field" type="text" placeholder="Name">
+                                                                                      <input class="input-group-field" type="email" placeholder="Email address">
+                                                                                      <textarea placeholder="Message"></textarea>
+                                                                                    </div>
+                                                                                    <a class="button expanded" href="#">Submit</a>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                             
+                                                                                 
+                                                                                  <div class="social">
+                                                                                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                                                                                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                                                                                    <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                                                                                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </footer>
+                                                                          </div>
+                                                                          
+                                                                          
+                                                                       
+        
+        </div>
+    </div>
+    
+</body>
+</html>
